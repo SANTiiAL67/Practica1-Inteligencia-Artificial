@@ -1,5 +1,4 @@
 # Practica1-Inteligencia-Artificial
-El readme al repositorio es: https://github.com/SANTiiAL67/Practica1-Inteligencia-Artificial
 Título: Recolección de datos
 Objetivo: El objetivo de esta práctica es la recolección de datos de dos fuentes
 diferentes (Wallapop y Filmaffinity) utilizando técnicas de web scraping. Se espera que
