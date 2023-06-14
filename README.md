@@ -1,44 +1,37 @@
-# Practica1-Inteligencia-Artificial
+# Practica2-Inteligencia-Artificial
 
 El link al github es: https://github.com/SANTiiAL67/Practica1-Inteligencia-Artificial
 
-Título: Recolección de datos
-Objetivo: El objetivo de esta práctica es la recolección de datos de dos fuentes
-diferentes (Wallapop y Filmaffinity) utilizando técnicas de web scraping. Se espera que
-los alumnos recolecten datos e imágenes de cuatro objetos (a su elección) en
-Wallapop y sinopsis, título y género de películas de "horror" y "comedia" en
-Filmaffinity, el contenido debe estar en. Español, se debe recolectar el máximo de
-películas que sea posible.
+Título: Modelo clasificación
+Objetivo: El objetivo de esta práctica es la construcción de dos modelos de
+clasificación, uno de texto y otro de imágenes. Los datos que usaremos son los
+recolectados en la práctica 1.
 Instrucciones:
-1. Fuentes de datos:
-• Wallapop: los alumnos deberán elegir cuatro objetos de su elección y
-recolectar los siguientes datos:
-• Título del producto
-• Precio
-• Descripción
-• Imágenes
-• Filmaffinity: los alumnos deberán recolectar los siguientes datos de
-películas de "horror" y "comedia" en español:
-• Título de la película
-• Género
-• Sinopsis
-2. Web scraping:
-• Los alumnos deberán utilizar técnicas de web scraping para recolectar
-los datos y las imágenes de Wallapop y Filmaffinity.
-• La práctica debe realizarse en Python.
-• Los datos y las imágenes recolectados deberán ser almacenados en el
-soporte que los alumnos consideren (por ejemplo, una base de datos,
-un archivo CSV o JSON).
-3. Cantidad
-• El objetivo en Wallapop es la recolección de al menos mil productos
-diferentes.
-• El objetivo en Filmaffinity es la recolección del máximo de películas que
-sea posible.
-4. Entrega:
+1. Modelos:
+• Clasificador texto: los alumnos deberán entrenar un modelo de
+clasificación de texto, para distinguir entre sinopsis de “horror” y
+comedia en Español.
+• Clasificador de imágenes: los alumnos deberán entrenar un modelo de
+clasificación de imágenes, para ser capaces de clasificar entre las
+diferentes clases que recolectaron de Wallapop.
+2. Feature extraction:
+• Texto: Se pueden usar técnicas clásicas como BOW, o probar técnicas
+más avanzadas de extracción de características de los textos.
+• Imagen: Se deberá usar un modelo pre-entrenado para la extracción de
+características, hay muchos modelos disponibles, la elección es libre de
+cada grupo (https://keras.io/api/applications/).
+3. Visualización:
+• Imagen: los alumnos deberán visualizar las imágenes en un espacio de
+dos dimensiones y en un espacio de tres dimensiones. Para ello tendrán
+que usar los vectores extraídos de las imágenes, alguna técnica de
+reducción de dimensiones para poder visualizarlo.
+4. Puesta en “producción”:
+• Texto: el clasificador de texto deberá implementarse en un servicio para
+poder ser consumido por peticiones “http”, para la implementación del
+servicio los alumnos se pueden apoyar en Flask o FastApi. Este servicio
+se usará desde un front, este se encuentra disponible en el campus
+Unidad 2 “Front ML model”.
+5. Entrega:
 • La entrega se evaluará mediante:
-• La revisión del repositoro git.
+• Un zip con el código y los modelos.
 • La revisión del cumplimento de los objetivos.
-• La revisión del flujo git que haya tenido el equipo.
-• Además, los equipos deberán presentar los resultados y comentar
-posibles aplicaciones prácticas de la recolección de datos mediante web
-scraping.
