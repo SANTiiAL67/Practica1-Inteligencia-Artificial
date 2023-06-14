@@ -3,6 +3,7 @@
 El link al github es: https://github.com/SANTiiAL67/Practica1-Inteligencia-Artificial
 
 Título: Modelo clasificación
+
 Objetivo: El objetivo de esta práctica es la construcción de dos modelos de
 clasificación, uno de texto y otro de imágenes. Los datos que usaremos son los
 recolectados en la práctica 1.
